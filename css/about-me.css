@@ -1,0 +1,160 @@
+.about-me-container {
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 960px;
+  grid-template-areas:
+    "hd hd hd hd hd"
+    "mn mn mn sd sd"
+    "ft ft ft ft ft";
+  margin: 0 auto;
+  background-color: rgb(177, 185, 187, 0.72);
+  border: 1px solid #707070;
+}
+
+header.about-me {
+  grid-area: hd;
+}
+
+main.about-me {
+  grid-area: mn;
+  margin-top: 0;
+  background-color: #fafafa;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+main.about-me > h3 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+aside.about-me {
+  grid-area: sd;
+  background-color: #fafafa;
+}
+
+footer.about-me {
+  grid-area: ft;
+}
+
+main.about-me {
+  padding-bottom: 2rem;
+}
+
+main.about-me > h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+img.vida-pic {
+  border-radius: 50%;
+  max-width: 100%;
+  width: 20%;
+}
+
+div.image-name-title {
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.name-title > p.name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.name-title > p.title {
+  font-size: 0.87rem;
+  text-transform: capitalize;
+}
+
+div.name-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+
+.bio {
+  line-height: 1.5;
+}
+
+.bio > p {
+  font-size: 0.87rem;
+  margin-top: 1rem;
+}
+
+.social-sharing {
+  background-color: rgb(177, 185, 187, 0.72);
+  margin: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.spread-the-word-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.spread-the-word-parent > p {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quote {
+  background-color: rgb(177, 185, 187, 0.72);
+  margin: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.favourite-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.favourite-quote > p {
+  text-transform: capitalize;
+  color: #5a5656;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 3px solid #b79097;
+}
+
+.blockquote-and-cite {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fafafa;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blockquote-parent > blockquote {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.cite-parent > cite {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+span.vida-linkedin {
+  color: #fafafa;
+  font-weight: bold;
+  background-color: #b79097;
+  padding: 0.1rem 0.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+}

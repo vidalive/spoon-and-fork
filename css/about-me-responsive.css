@@ -1,0 +1,14 @@
+/* Mobile  */
+@media (max-width: 740px) {
+  .about-me-container {
+    display: grid;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 960px;
+    grid-template-areas:
+      "hd hd hd hd hd"
+      "mn mn mn mn mn"
+      "sd sd sd sd sd"
+      "ft ft ft ft ft";
+  }
+}
